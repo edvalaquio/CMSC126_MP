@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Machine Prob</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="styles/jquery.min.js"></script>
+	<script src="styles/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/external.css">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sample">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+			<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-fire"></span> TwitBook</a>
+		</div>
+		<div class="collapse navbar-collapse" id="sample">
+			<ul class="nav navbar-nav pull-left">	
+				<li><a href="#" class="glyphicon glyphicon-home" data-placement="bottom" data-toggle="tooltip" title="Home"></a></li>
+				<li><a href="#" class="glyphicon glyphicon-envelope" data-placement="bottom" data-toggle="tooltip" title="Messages"></a></li>
+				<li><a href="#" class="glyphicon glyphicon-user" data-placement="bottom" data-toggle="tooltip" title="Profile"></a></li>
+			</ul>
+			<ul class="nav navbar-nav pull-right">
+				<li class="navbar-form">
+					<div class="input-group">
+						<input type="text" name="search" class="form-control" />	
+						<a href="#" class="input-group-addon">
+							<label class="glyphicon glyphicon-search"></label>
+						</a>
+					</div>
+				</li>
+				<li><a href="home.html" data-placement="bottom" data-toggle="tooltip" title="Logout">
+					<span class="glyphicon glyphicon-off"></span>
+				</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<footer class="navbar navbar-fixed-bottom">
+	</footer>
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip(); 
+		});
+	</script>
+</body>
+</html>

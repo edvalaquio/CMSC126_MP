@@ -35,15 +35,11 @@ body{
 	margin: 0%;
 	background-color: white;
 }
-/*.login-pad, .signup-pad{
-	margin: 7% 0%;
-	padding: 3%;
-}*/
-
-/*.signup-pad h3{
-	margin: 0%;
+nav .pull-left>li:hover, 
+nav .pull-right>li:hover{
+	background-color: rgb(8, 8, 8);
 }
-*/
+
 footer{
-	background-color: rgba(34, 34, 34, 0.1)
+	background-color: rgba(34, 34, 34, 0.1);
 }
