@@ -13,3 +13,14 @@
 	background-color: black;
 	color: white;
 }
+
+#carousel_background{
+	width:100%;
+}
+
+.carousel-inner .item{
+	width: 100%;
+	height: 600px;
+	/*background-size: cover;*/
+}
+
