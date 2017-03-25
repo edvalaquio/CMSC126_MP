@@ -14,40 +14,14 @@
 		<div class="navbar-header">
 			<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-fire"></span> TwitBook</a>
 		</div>
-		<div class="navbar-left">
-			<ul class="nav navbar-nav">	
-				<li><a href="#" title="Members" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Eric Flores and Emmanuel Valaquio">About</a></li>
-			</ul>
-		</div>
-		<div class="navbar-right">
-			<div class="navbar-form form-group">
-				<!-- <div class="input-group">
-					<label for="lang" class="input-group-addon">Language: </label>
-					<select title="lang" name="lang" class="form-control">
-						<option>English</option>
-						<option>Korean</option>
-						<option>Filipino</option>
-						<option>Japanese</option>
-						<option>Deustch</option>
-					</select>
-				</div> -->
-				<!-- <div class='dropdown'>
-					<button class="dropdown-toggle" data-toggle="dropdown">Language:</button>
-					<ul class="dropdown-menu">
-						<li>English</li>
-						<li>English</li>
-					</ul>
-				</div> -->
-				<div class="dropdown">
-					<button class="dropdown-toggle" type="button" data-toggle="dropdown">Dropdown<span class="caret"></span></button>
-					<ul class="dropdown-menu dropdown-menu-right">
-						<li><a href="#">HTML</a></li>
-						<li><a href="#">CSS</a></li>
-						<li><a href="#">JavaScript</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<!-- <div class="navbar-left"> -->
+		<ul class="nav navbar-nav navbar-left">	
+			<li><a href="#" title="Members" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Eric Flores and Emmanuel Valaquio">About</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">	
+			<li><a href="#">Language</a></li>
+		</ul>
+		<!-- </div> -->
 	</nav>
 	<script>
 		$(document).ready(function(){
@@ -57,39 +31,63 @@
 	<div class='container'>
 		<div class="row">
 			<div class="col-xs-12 col-md-5 col-md-offset-1">
-				<h1 class="display-4 bold">Welcome to TwitBook.</h1>
+				<h1><strong>Welcome to TwitBook.</strong></h1>
 				<p class="lead">Connect with your friends- and other fascinating people. Get in-the-moment updates on the things that interest you. And watch events unfold, in real-time, from every single
 				angle</p>
 			</div>
 			<div class="col-xs-12 col-md-4 col-md-offset-1">
-				<div class="form-grouping">
-					<form action="profile.html">
-						<div class="form-group">
-							<input class="form-control" type="text" name="input_name" placeholder="Username or Email Address" />	
-						</div>
-						<div class="form-group">
-							<input class="form-control" type="text" name="input_pw" placeholder="Password" />	
-						</div>
-						<div class="form-group">
-							<input type="checkbox" name="remember" />
-							<label>Remember me?</label>
-							<a href="#">| Forgot password?</a>
-							<input type="submit" class="btn btn-primary pull-right" name="" value="Login" />
-						</div>
-					</form>
+				<div class="card login-pad">
+					<div class="card-block">
+						<form action="profile.html">
+							<div class="form-group">
+								<input class="form-control" type="text" name="input_name" placeholder="Username or Email Address" />	
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="text" name="input_pw" placeholder="Password" />	
+							</div>
+							<div class="form-group">
+								<div class="form-check form-check-inline">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" > Remember me?
+									</label>
+									<a href="#">| Forgot password?</a>
+									<input type="submit" class="btn btn-primary pull-right" name="" value="Login" />
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
-				<div class="form-grouping">
-					<form>
-						<div class="form-group">
-							<input class="form-control" type="text" name="input_name" placeholder="Username or Email Address" />	
-						</div>
-					</form>
+				<div class="card signup-pad">
+				 	<div class="card-block">
+						<h3><strong>New to TwitBook? </strong><small>Signup</small></h3>
+						<hr />
+						<form>
+							<div class="form-group">
+								<div class="input-group">
+									<label class="input-group-addon"><span class="glyphicon glyphicon-user"></span></label><input class="form-control" type="text" name="name" placeholder="Full Name" />
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<label class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></label><input class="form-control" type="text" name="name" placeholder="Email Address" />
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<label class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></label><input class="form-control" type="text" name="name" placeholder="Password" />
+								</div>
+							</div>
+							<div class="form-group clearfix">
+								<input type="submit" name="" class="btn btn-warning pull-right" value="Signup for TwitBook" />
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-<!-- 	<footer>
-		<p>SAMPLE SAMPLE SAMPLE SAMPLE</p>
-	</footer> -->
+	<footer class="navbar navbar-fixed-bottom bg-default">
+		<p class="text-center">SAMPLE SAMPLE SAMPLE SAMPLE</p>
+	</footer>
 </body>
 </html>
