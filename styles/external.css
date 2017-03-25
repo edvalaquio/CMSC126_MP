@@ -1,0 +1,15 @@
+.popover{
+	width: 160%;
+}
+
+.popover-title, #drop{
+	text-align: center;
+	/*font-weight: bold;*/
+	color: white;
+	background-color: rgb(34, 34, 34);
+}
+
+#languages>label:active, #languages>select:active{
+	background-color: black;
+	color: white;
+}

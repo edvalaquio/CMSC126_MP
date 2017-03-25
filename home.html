@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 7</title>
+	<script src="styles/jquery.min.js"></script>
+	<script src="styles/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/external.css">
+	<style type="text/css">
+		body{
+			padding-top: 60px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-fire"></span> TwitBook</a>
+		</div>
+		<div class="navbar-left">
+			<ul class="nav navbar-nav">	
+				<li><a href="#" title="Members" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Eric Flores and Emmanuel Valaquio">About</a></li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+			<div class="navbar-form form-group">
+				<!-- <div class="input-group">
+					<label for="lang" class="input-group-addon">Language: </label>
+					<select title="lang" name="lang" class="form-control">
+						<option>English</option>
+						<option>Korean</option>
+						<option>Filipino</option>
+						<option>Japanese</option>
+						<option>Deustch</option>
+					</select>
+				</div> -->
+				<button class="dropdown-toggle" data-toggle="dor">Language: 
+					<ul class="dropdown-menu">
+						<li>English</li>
+						<li>English</li>
+					</ul>
+				</button>
+			</div>
+		</div>
+	</nav>
+	<script>
+		$(document).ready(function(){
+		    $('[data-toggle="popover"]').popover();   
+		});
+	</script>
+	<div class='container'>
+		<div class="row">
+			<div class="col-xs-6">
+				<h1 class="page-header">Welcome to TwitBook</h1>
+				<p>Connect with you friends- and other fascinating people.
+				Get in-the-moment updates on the things that interest you.
+				And watch events unfold, in real-time, from every single
+				angle</p>
+			</div>
+			<div class="row">
+				<h1 class="page-header">Welcome to TwitBook</h1>
+				<p>Connect with you friends- and other fascinating people.
+				Get in-the-moment updates on the things that interest you.
+				And watch events unfold, in real-time, from every single
+				angle</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>SAMPLE SAMPLE SAMPLE SAMPLE</p>
+	</footer>
+</body>
+</html>
