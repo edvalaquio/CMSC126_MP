@@ -35,8 +35,7 @@ body{
 	margin: 0%;
 	background-color: white;
 }
-nav .pull-left>li:hover, 
-nav .pull-right>li:hover{
+.hovered:hover{
 	background-color: rgb(8, 8, 8);
 }
 
