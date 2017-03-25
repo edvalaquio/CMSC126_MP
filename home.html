@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Exercise 7</title>
+	<title>Machine Prob</title>
 	<script src="styles/jquery.min.js"></script>
 	<script src="styles/bootstrap/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/external.css">
 	<style type="text/css">
-		body{
-			padding-top: 60px;
-		}
 	</style>
 </head>
 <body>
@@ -34,12 +31,21 @@
 						<option>Deustch</option>
 					</select>
 				</div> -->
-				<button class="dropdown-toggle" data-toggle="dor">Language: 
+				<!-- <div class='dropdown'>
+					<button class="dropdown-toggle" data-toggle="dropdown">Language:</button>
 					<ul class="dropdown-menu">
 						<li>English</li>
 						<li>English</li>
 					</ul>
-				</button>
+				</div> -->
+				<div class="dropdown">
+					<button class="dropdown-toggle" type="button" data-toggle="dropdown">Dropdown<span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#">HTML</a></li>
+						<li><a href="#">CSS</a></li>
+						<li><a href="#">JavaScript</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -70,24 +76,45 @@
 
 	<!-- <div class='container'>
 		<div class="row">
-			<div class="col-xs-6">
-				<h1 class="page-header">Welcome to TwitBook</h1>
-				<p>Connect with you friends- and other fascinating people.
-				Get in-the-moment updates on the things that interest you.
-				And watch events unfold, in real-time, from every single
+			<div class="col-xs-12 col-md-5 col-md-offset-1">
+				<h1 class="display-4 bold">Welcome to TwitBook.</h1>
+				<p class="lead">Connect with your friends- and other fascinating people. Get in-the-moment updates on the things that interest you. And watch events unfold, in real-time, from every single
 				angle</p>
 			</div>
-			<div class="row">
-				<h1 class="page-header">Welcome to TwitBook</h1>
-				<p>Connect with you friends- and other fascinating people.
-				Get in-the-moment updates on the things that interest you.
-				And watch events unfold, in real-time, from every single
-				angle</p>
+			<div class="col-xs-12 col-md-4 col-md-offset-1">
+				<div class="form-grouping">
+					<form action="profile.html">
+						<div class="form-group">
+							<input class="form-control" type="text" name="input_name" placeholder="Username or Email Address" />	
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="text" name="input_pw" placeholder="Password" />	
+						</div>
+						<div class="form-group">
+							<input type="checkbox" name="remember" />
+							<label>Remember me?</label>
+							<a href="#">| Forgot password?</a>
+							<input type="submit" class="btn btn-primary pull-right" name="" value="Login" />
+						</div>
+					</form>
+				</div>
+				<div class="form-grouping">
+					<form>
+						<div class="form-group">
+							<input class="form-control" type="text" name="input_name" placeholder="Username or Email Address" />	
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
+<<<<<<< HEAD
 	</div> -->
 
 	<!-- <footer>
+=======
+	</div>
+<!-- 	<footer>
+>>>>>>> 3620ee0e0fded7ea3ab8940309c13a65cf3b424d
 		<p>SAMPLE SAMPLE SAMPLE SAMPLE</p>
 	</footer> -->
 </body>
