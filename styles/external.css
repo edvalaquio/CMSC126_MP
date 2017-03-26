@@ -8,10 +8,19 @@ body{
 	box-shadow: 5px 5px 15px;
 }
 
-footer{
-	background-color: rgba(34, 34, 34, 0.7);
+footer .navbar{
+	margin-top: 3.75%;
+	margin-bottom: 0;
+	border-style: none;
+	/*margin-top: 51px;*/
+	/*margin: 0;*/
 }
 
 .hovered:hover{
 	background-color: black;
+}
+
+.panel .panel-heading{
+	background-color: white;
+	margin: 0;
 }
