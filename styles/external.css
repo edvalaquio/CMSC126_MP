@@ -24,13 +24,43 @@ footer .navbar{
 	margin: 0;
 }
 
+.top{
+	height: auto;
+	position: relative;
+}
+
 .coverPhoto{
 	height: 250px;
 	position: relative;
-	overflow: hidden;
-	top: 0px;
-	background: url("../resources/cover.png") no-repeat center;
+	/*background: url("../resources/cover.png") no-repeat center;*/
 	background-size: cover;
+}
+
+.coverPhoto a{
+	background: url("../resources/cover.png") no-repeat center;
+	height: 250px;
+	/*position: relative;*/
+}
+
+
+.insideCover{
+	position: absolute;
+	bottom: 15px;
+	/*top: 80%;*/
+}
+
+.insideCover h3{
+	color: white;
+	margin: 0;
+	/*margin-left: 2%;*/
+}
+
+.subNav{
+	position: relative;
+	left: 170px;
+	/*bottom: 10%;*/
+	background-color: white;
+	padding: 0.25%;
 }
 
 .profPic img{
@@ -41,33 +71,13 @@ footer .navbar{
 .profPic{
 	width: 150px;
 	height: 150px;
-	/*position: relative;*/
+	position: relative;
 	padding: 0;
-	top: -85px;
-	/*left: 15px;*/
+	bottom: 90px;
+	left: 20px;
 }
 
-.insideCover{
-	position: absolute;
-	top: 80%;
-}
-
-.insideCover h3{
-	color: white;
-	margin: 0;
-	/*margin-left: 2%;*/
-}
-
-.subNav{
-	background-color: white;
-	padding: 3px;
-}
-
-.profNav{
-	left: 15px;
-}
-
-@media only screen and (max-width: 991px){
+/*@media only screen and (max-width: 991px){
 	.profPic{
 		left: 40%;
 	}
@@ -83,4 +93,4 @@ footer .navbar{
 	.profPic{
 		left: 25%;
 	}
-}
+}*/
