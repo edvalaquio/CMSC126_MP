@@ -49,27 +49,30 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="container">
-		<div class="row">
-			
-		</div>
-	</div>
-	<!-- <footer>
-=======
-
 	<div class="container">	
-		<div class="row">	
-			 <div id="cover-photo" class="col-xs-12" style="height: 300px; display:inline-block; vertical-align: middle; overflow:hidden;" >
-				 <img class="img-responsive" src="resources/cover.png" alt="cover" style="width: 100%; height:auto; " />	 
-				 <button style="position: absolute;"> Hey </button>
-				 <button> Hi </button> 
+		<div class="row col-xs-12">	
+			<div class="coverPhoto">
+				<div class="col-md-10 col-md-offset-2  hidden-sm hidden-xs insideCover">
+					<a class="pull-left display-1"><h4>Sample Name</h4></a>
+					<div class="pull-right">
+						<button>Update Info</button>
+						<button>View Activity Log <span></span></button>
+					</div>
+				</div>
+				<img class="img-responsive" src="resources/cover.png" alt="cover" />	 
 			</div>
-			<div id="prof-pic" class="panel col-xs-2 col-xs-offset-1" style="position: relative; top: -150px; width:150px; height: 150px; overflow: hidden; padding: 0 0 0 0;">
-			<!-- style="position: relative; top: -150px; left: 30px; width:200px; height: 200px; overflow: hidden; padding: 0 0 0 0;" -->
+			<div class="col-md-2 profPic">
+				<img src="resources/dp.png" class="img-thumbnail" /> 
+			</div>
+		</div>
+
+		<div class="row col-xs-12">
+			<!-- <div id="prof-pic" class="panel col-xs-2 col-xs-offset-1" style="position: relative; top: -150px; width:150px; height: 150px; overflow: hidden; padding: 0 0 0 0;">
+			style="position: relative; top: -150px; left: 30px; width:200px; height: 200px; overflow: hidden; padding: 0 0 0 0;"
 				<img src="resources/dp.png" style="width: 100%; height: auto"/> 
-			</div>
-			<div class="container no-padding col-xs-8">
-				<div class="nav navbar" style="background-color: black;">
+			</div> -->
+			<div class="">
+				<div class="nav navbar" style=";">
 					<ul class="nav nav-tabs">
 						<li><a href="#"> Home </a></li>
 						<li><a href="#"> About </a></li>
@@ -78,10 +81,49 @@
 				</div>
 			</div>
 		</div>
-	
-		<div class="row">
-			<div class="panel">
-				<h4> Intro </h4>
+		<div class="row col-xs-5">
+			<div class="panel panel-default">
+				<h4><span class="glyphicon glyphicon-globe"></span> Intro </h4>
+				<div class=" text-primary"><span class="glyphicon glyphicon-plus text-primary"></span><span class="text-primary"> Describe who you are </span></div>
+				<hr /> 
+				<div class="panel-content "><span class="glyphicon glyphicon-education"></span> B.S. in Computer Science at <span class="text-primary"> University of the Philippines Visayas</span></div>
+			</div>
+			<div class="panel panel-default">
+				<h4><span class="glyphicon glyphicon-globe"></span> Photos </h4>
+				<hr/>
+				<div class="row">
+					<img src="resources/eh.jpg" class ="col-xs-4 img-thumbnail" width="100" height="100"/>
+					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail" width="100px" height="100px"/>
+					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail" width="100px" height="100px"/>
+					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail" width="100px" height="100px"/>
+					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail" width="100px" height="100px"/>
+					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail" width="100px" height="100px"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="row col-xs-6 col-xs-offset-1">
+			<div class="panel panel-default no-padding">
+				<div class="panel-heading primary">
+				<span class="glyphicon glyphicon-pencil text-primary padding"></span> Status 
+				<span class="glyphicon glyphicon-picture"></span> Photo/Video
+				</div>
+				<div class="panel-content text-primary">
+					<form>
+						<textarea class="form-control"> </textarea>
+					</form>
+				</div>
+				<div class="panel-footer">
+					<button class="btn btn-primary">Post</button>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-content">
+					<img src="resources/dp.png" class="img-responsive img-thumbnail" style="width:100px; height: 100px;" /> 
+					<h4> Eric Flores </h4>
+					<span class="glyphicon glyphicon-thumbs-up"></span> Like
+					<span class="glyphicon glyphicon-comment"></span> Comment
+				</div>
 			</div>
 		</div>
 	</div>

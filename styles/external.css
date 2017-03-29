@@ -12,16 +12,41 @@ footer .navbar{
 	margin-top: 3.75%;
 	margin-bottom: 0;
 	border-style: none;
-	/*margin-top: 51px;*/
-	/*margin: 0;*/
 }
 
 .hovered:hover{
 	background-color: black;
 }
 
-
 .panel .panel-heading{
 	background-color: white;
 	margin: 0;
+}
+
+.coverPhoto{
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+	top: 0px;
+}
+
+.profPic img{
+	height: 160px;
+	width: 160px;
+/*	left: 30px;
+	top: -50px;*/
+	/*background-color: black;*/
+}
+
+.profPic{
+	position: relative;
+	padding: 0;
+	top: -90px;
+	left: 25px;
+}
+
+.insideCover{
+	background-color: rgba(255, 255, 255, 0.90);
+	position: absolute;
+	top: 210px;
 }
