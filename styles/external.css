@@ -1,5 +1,6 @@
 body{
 	margin-top: 50px;
+	background-color: rgb(242, 242, 242);
 }
 
 .panel {
@@ -28,25 +29,58 @@ footer .navbar{
 	position: relative;
 	overflow: hidden;
 	top: 0px;
+	background: url("../resources/cover.png") no-repeat center;
+	background-size: cover;
 }
 
 .profPic img{
-	height: 160px;
-	width: 160px;
-/*	left: 30px;
-	top: -50px;*/
-	/*background-color: black;*/
+	height: 100%;
+	width: 100%;
 }
 
 .profPic{
-	position: relative;
+	width: 150px;
+	height: 150px;
+	/*position: relative;*/
 	padding: 0;
-	top: -90px;
-	left: 25px;
+	top: -85px;
+	/*left: 15px;*/
 }
 
 .insideCover{
-	background-color: rgba(255, 255, 255, 0.90);
 	position: absolute;
-	top: 210px;
+	top: 80%;
+}
+
+.insideCover h3{
+	color: white;
+	margin: 0;
+	/*margin-left: 2%;*/
+}
+
+.subNav{
+	background-color: white;
+	padding: 3px;
+}
+
+.profNav{
+	left: 15px;
+}
+
+@media only screen and (max-width: 991px){
+	.profPic{
+		left: 40%;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	.profPic{
+		left: 30%;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.profPic{
+		left: 25%;
+	}
 }
