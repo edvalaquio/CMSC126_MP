@@ -52,18 +52,60 @@
 	</nav>
 	<div class="container">	
 		<div class="row">
-			<div class="top col-xs-12">
-				<div class="coverPhoto">
-					<a class="col-xs-12" href="#">
-						
-					</a>
-					<div class="col-lg-2 col-md-3 col-md-push-2 hidden-sm hidden-xs insideCover">
-						<h3><strong>Sample Name</strong></h3>
+			<div class="top">
+				<div class="col-xs-12">
+					<div class="coverPhoto">
+						<a class="col-xs-12" href="#" data-toggle="modal" data-target="#cover_modal">			
+						</a>
+						<div id="cover_modal" class="modal fade" role="dialog">
+						 	<div class="modal-dialog">
+						    	<div class="modal-content">
+						      		<div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal">&times;</button>
+						      		</div>
+								    <div class="modal-body" >
+								    	<!-- <p>Some text in the modal.</p> -->
+								    	<img src="resources/cover.png" class="img-responsive" />
+								    </div>
+						      		<div class="modal-footer">
+						       	 		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						      		</div>
+						    	</div>
+						  </div>
+						</div>
+						<div class="profPic">
+							<a href="#" data-toggle="modal" data-target="#prof_modal"> 
+								<img src="resources/dp.png" class="img-thumbnail" /> 
+							</a>
+							<div id="prof_modal" class="modal fade" role="dialog">
+							 	<div class="modal-dialog">
+							    	<div class="modal-content">
+							      		<div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal">&times;</button>
+							      		</div>
+									    <div class="modal-body">
+									    	<img src="resources/dp.png" class="img-responsive"/>
+									    </div>
+							      		<div class="modal-footer">
+							       	 		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							      		</div>
+							    	</div>
+							  </div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-md-push-2 hidden-sm hidden-xs insideCover">
+							<h3><strong>Sample Name</strong></h3>
+						</div>
+						<div class="col-lg-3 col-lg-push-9 col-md-4 col-md-push-8 hidden-sm hidden-xs insideCover">
+							<button class="btn btn-default">Update Info</button>
+							<button class="btn btn-default">View Activity Log <span></span></button>
+						</div>
 					</div>
 					<div class="col-lg-3 col-lg-push-9 col-md-4 col-md-push-8 hidden-sm hidden-xs insideCover">
 						<button class="btn btn-default">Update Info</button>
 						<button class="btn btn-default">View Activity Log <span></span></button>
 					</div>
+					<!-- <img class="img-responsive" src="resources/cover.png" alt="cover" />	 --> 
 				</div>
 				<div class="profPic col-xs-2">
 					<img src="resources/dp.png" class="img-thumbnail" /> 
@@ -78,10 +120,12 @@
 			</div>	
 		</div>
 		<div class="row col-xs-12">
+
 			<!-- <div id="prof-pic" class="panel col-xs-2 col-xs-offset-1" style="position: relative; top: -150px; width:150px; height: 150px; overflow: hidden; padding: 0 0 0 0;">
 			style="position: relative; top: -150px; left: 30px; width:200px; height: 200px; overflow: hidden; padding: 0 0 0 0;"
 				<img src="resources/dp.png" style="width: 100%; height: auto"/> 
 			</div> -->
+
 		</div>
 		<div class="row col-xs-5">
 			<div class="panel panel-default">
@@ -94,19 +138,19 @@
 				<h4><span class="glyphicon glyphicon-globe"></span> Photos </h4>
 				<hr/>
 				<div class="row">
-					<img src="resources/eh.jpg" class ="col-xs-4 img-thumbnail" width="100" height="100"/>
-					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail" width="100px" height="100px"/>
-					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail" width="100px" height="100px"/>
-					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail" width="100px" height="100px"/>
-					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail" width="100px" height="100px"/>
-					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail" width="100px" height="100px"/>
+					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail img-responsive" />
+					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail img-responsive" />
+					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail img-responsive" />
+					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail img-responsive" />
+					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail img-responsive" />
+					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail img-responsive" />
 				</div>
 			</div>
 		</div>
 
-		<div class="row col-xs-6 col-xs-offset-1">
+		<div class="row col-xs-7 " style="margin-left: 10px;">
 			<div class="panel panel-default no-padding">
-				<div class="panel-heading primary">
+				<div class="panel-heading">
 				<span class="glyphicon glyphicon-pencil text-primary padding"></span> Status 
 				<span class="glyphicon glyphicon-picture"></span> Photo/Video
 				</div>
