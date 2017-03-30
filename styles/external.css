@@ -27,6 +27,7 @@ footer .navbar{
 .top{
 	height: auto;
 	position: relative;
+	/*background-color: black;*/
 }
 
 .coverPhoto{
@@ -57,7 +58,7 @@ footer .navbar{
 
 .subNav{
 	position: relative;
-	left: 170px;
+	left: 20px;
 	/*bottom: 10%;*/
 	background-color: white;
 	padding: 0.25%;
