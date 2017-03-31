@@ -25,22 +25,20 @@ footer .navbar{
 }
 
 .top{
-	height: auto;
 	position: relative;
-	/*background-color: black;*/
+	height: 310px;
 }
 
 .coverPhoto{
 	height: 250px;
 	position: relative;
-	/*background: url("../resources/cover.png") no-repeat center;*/
 	background-size: cover;
 }
 
 .coverPhoto a{
-	background: url("../resources/cover.png") no-repeat center;
+	background: url("../resources/star_wars.png") no-repeat center;
 	height: 250px;
-	/*position: relative;*/
+	padding: 0;
 }
 
 
@@ -53,16 +51,18 @@ footer .navbar{
 
 .insideCover h3{
 	color: white;
-	margin: 0;
-	/*margin-left: 2%;*/
+	max-width: 180px;
+	margin: 0 0 0 0;
+	font-weight: bold;
 }
 
 .subNav{
 	position: relative;
-	left: 20px;
-	/*bottom: 10%;*/
+	left: 2%;
 	background-color: white;
 	padding: 0.25%;
+	/*width: 83.5%;*/
+	/*top: 0px;*/
 }
 
 .profPic img{
@@ -71,28 +71,11 @@ footer .navbar{
 }
 
 .profPic{
-	width: 150px;
-	height: 150px;
+	width: 15rem;
+	height: 15rem;
+	/*height: auto;*/
 	position: relative;
 	padding: 0;
 	bottom: 90px;
-	left: 20px;
+	left: 2%;
 }
-
-/*@media only screen and (max-width: 991px){
-	.profPic{
-		left: 40%;
-	}
-}
-
-@media only screen and (max-width: 425px){
-	.profPic{
-		left: 30%;
-	}
-}
-
-@media only screen and (max-width: 320px){
-	.profPic{
-		left: 25%;
-	}
-}*/
