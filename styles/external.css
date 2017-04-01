@@ -6,6 +6,12 @@ body{
 .panel {
 	margin-top: 5%;
 	padding: 3%;
+/*	box-shadow: 5px 5px 15px;*/
+}
+
+.home-panel {
+	margin-top: 5%;
+	padding: 3%;
 	box-shadow: 5px 5px 15px;
 }
 
@@ -78,4 +84,28 @@ footer .navbar{
 	padding: 0;
 	bottom: 90px;
 	left: 2%;
+}
+
+.photo img{
+	height: auto;
+	width: 100px;
+}
+.photo{
+	width: 15rem;
+	height: 15rem;
+	/*margin: 5px;*/
+	padding: 0%;
+	/*vertical-align:middle;
+	display: table-cell;
+	text-align: center;*/
+}
+
+.btn-no-border{
+	border:0px solid; 
+	background-color:transparent; "
+}
+
+.dp{
+	width: 5rem;
+	height: 5rem;
 }

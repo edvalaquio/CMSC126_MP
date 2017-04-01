@@ -63,7 +63,7 @@
 							        <button type="button" class="close" data-dismiss="modal">&times;</button>
 					      		</div>
 							    <div class="modal-body" >
-							    	<img src="resources/cover.png" class="img-responsive" />
+							    	<img src="resources/star_wars.png" class="img-responsive" />
 							    </div>
 					      		<div class="modal-footer">
 					       	 		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -137,26 +137,83 @@
 				<div class="panel-content "><span class="glyphicon glyphicon-education"></span> B.S. in Computer Science at <span class="text-primary"> University of the Philippines Visayas</span></div>
 			</div>
 			<div class="panel panel-default">
-				<h4><span class="glyphicon glyphicon-globe"></span> Photos </h4>
-				<hr/>
-				<div class="row">
-					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail img-responsive" />
-					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail img-responsive" />
-					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail img-responsive" />
-					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail img-responsive" />
-					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail img-responsive" />
-					<img src="resources/eh.jpg" class="col-xs-4 img-thumbnail img-responsive" />
+				<a href="#" data-toggle="modal" data-target="#photos_modal" style="color: black;">
+					<h4><span class="glyphicon glyphicon-globe"></span> Photos </h4>
+				</a>
+				<div class="modal fade" id="photos_modal" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+				      		<div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal">&times;</button>
+				      		</div>
+						    <div class="modal-body">
+							    <div id="carousel_photos" class="carousel slide" data-ride="carousel">
+									<div class="carousel-inner" role="listbox">
+										<div class="item active one">
+											<img src="resources/eh.jpg" />
+										</div>
+										<div class="item two">
+											<img src="resources/1.jpg">
+										</div>
+										<div class="item three">
+											<img src="resources/2.jpg">
+										</div>
+									</div>
+								</div>
+						    </div>
+				      		<div class="modal-footer">
+				       	 		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				      		</div>
+				    	</div>
+					</div>
 				</div>
+				<hr/>
+					<div class="panel-content">
+						<div class="row">
+							<div class="col-xs-4">
+								<a href="#" data-toggle="modal" data-target="#prof_modal"> 
+									<img src="resources/eh.jpg" class="img-thumbnail photo img-responsive"  />
+								</a>
+							</div>
+							<div class="col-xs-4">
+								<a href="#" data-toggle="modal" data-target="#prof_modal"> 
+									<img src="resources/eh.jpg" class="img-thumbnail photo img-responsive"  />
+								</a>
+							</div>
+							<div class="col-xs-4">
+								<a href="#" data-toggle="modal" data-target="#prof_modal"> 
+									<img src="resources/eh.jpg" class="img-thumbnail photo img-responsive"  />
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<a href="#" data-toggle="modal" data-target="#prof_modal"> 
+									<img src="resources/eh.jpg" class="img-thumbnail photo img-responsive"  />
+								</a>
+							</div>
+							<div class="col-xs-4">
+								<a href="#" data-toggle="modal" data-target="#prof_modal"> 
+									<img src="resources/eh.jpg" class="img-thumbnail photo img-responsive"  />
+								</a>
+							</div>
+							<div class="col-xs-4">
+								<a href="#" data-toggle="modal" data-target="#prof_modal"> 
+									<img src="resources/eh.jpg" class="img-thumbnail photo img-responsive"  />
+								</a>
+							</div>
+						</div>
+					</div>
 			</div>
 		</div>
 
-		<div class="row col-xs-7 col-xs-12" style="margin-left: 10px;">
+		<div class="row col-md-7 col-xs-12" style="margin-left: 10px; top:-10px; position: relative;">
 			<div class="panel panel-default no-padding">
 				<div class="panel-heading">
-				<span class="glyphicon glyphicon-pencil text-primary padding"></span> Status 
-				<span class="glyphicon glyphicon-picture"></span> Photo/Video
+					<span class="glyphicon glyphicon-pencil text-primary padding"></span> Status 
+					<span class="glyphicon glyphicon-picture"></span> Photo/Video
 				</div>
-				<div class="panel-content text-primary">
+				<div class="panel-body text-primary">
 					<form>
 						<textarea class="form-control"> </textarea>
 					</form>
@@ -167,10 +224,28 @@
 			</div>
 			<div class="panel panel-default">
 				<div class="panel-content">
-					<img src="resources/dp.png" class="img-responsive img-thumbnail" /> 
-					<h4> Eric Flores </h4>
-					<span class="glyphicon glyphicon-thumbs-up"></span> Like
-					<span class="glyphicon glyphicon-comment"></span> Comment
+					<div class="row">
+						<div class="col-xs-2">
+							<img src="resources/profil_pic.png" class="img-responsive dp" />
+						</div>
+						<div class="col-xs-10 pull-left">
+							<h4> Eric Flores </h4>
+							<small>Juvember 16 at 12:00am </small>
+						</div>
+					</div>
+					<button class="btn btn-no-border">
+						<span class="glyphicon glyphicon-thumbs-up"></span> Like
+					</button>
+					<button class="btn btn-no-border" data-toggle="collapse" data-target="#comment">
+						<span class="glyphicon glyphicon-comment"></span> Comment
+					</button>
+					<div id="comment" class="collapse" style="overflow: auto;">
+							<form>
+								<textarea class="form-control"> </textarea>
+								<br />
+								<button class="btn btn-primary pull-left">Post</button>
+							</form>
+					</div>
 				</div>
 			</div>
 		</div>
