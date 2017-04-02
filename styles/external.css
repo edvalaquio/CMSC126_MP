@@ -3,19 +3,19 @@ body{
 	background-color: rgb(242, 242, 242);
 }
 
-.panel {
-	margin-top: 5%;
-	padding: 3%;
-}
-
-.post-panel{
-	padding: 0;
-}
-
 .home-panel {
 	margin-top: 5%;
-	padding: 3%;
+	padding: 5px;
 	box-shadow: 5px 5px 15px;
+}
+
+.home-panel h4{
+	margin: 0;
+	padding: 15px 7px 5px 7px;
+}
+
+.home-panel .panel-body{
+	padding: 20px 7px 0px 7px;
 }
 
 footer .navbar{
@@ -28,9 +28,23 @@ footer .navbar{
 	background-color: black;
 }
 
-.panel .panel-heading{
+.panel .panel-heading, .panel .panel-body{
 	background-color: white;
-	margin: 0;
+	padding-left: 5px;
+}
+
+.create_posts>.panel .panel-heading{
+	/*background-color: white;*/
+	background-color: rgb(245, 245, 245);
+	margin: 2px 2px;
+}
+
+.create_posts>.panel .panel-footer{
+	margin: 2px 2px;
+}
+
+.posts>.panel .panel-body{
+	padding: 0;
 }
 
 .top{
@@ -43,7 +57,7 @@ footer .navbar{
 	height: 250px;
 	position: relative;
 	background-size: cover;
-	background: url("../resources/star_wars.png") no-repeat center;
+	background: url("../resources/cover_photo.jpg") no-repeat center;
 }
 
 .coverPhoto a{
@@ -62,6 +76,7 @@ footer .navbar{
 	position: absolute;
 	top: 160px;
 	left: 26.5%;
+	/*background: url("../resources/profil.png") no-repeat center;*/
 }
 
 .profPic img{
@@ -114,6 +129,10 @@ footer .navbar{
 	margin-right: 0px;
 }
 
+.content{
+	position: relative;
+	margin-top: 10px;
+}
 
 @media screen and (min-width: 321px){
 	.profPic{
@@ -134,8 +153,11 @@ footer .navbar{
 }
 
 @media screen and (min-width: 769px){
+	.content{
+		/*margin-top: 0;*/
+	}
 	.top{
-		margin-bottom: 50px;
+		margin-bottom: 70px;
 	}
 
 	.profPic{
