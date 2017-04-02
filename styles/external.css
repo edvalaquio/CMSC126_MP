@@ -51,9 +51,17 @@ footer .navbar{
 	padding: 0;
 }
 
+.photo-padding{
+	padding: 0;
+	/*padding-bottom: 0px;*/
+}
+
 .no-padding{
+	padding: 0;
+}
+
+.photos-padding{
 	padding: 5px;
-	padding-bottom: 0px;
 }
 
 .profPic{
@@ -95,9 +103,14 @@ footer .navbar{
 	width: 100px;
 }
 
+.photo-box{
+	height: 135px;
+	width: 135px;
+}
+
 .photo{
-	width: 15rem;
-	height: 15rem;
+	width: 100%;
+	height: 100%;
 	padding: 0%;
 }
 
