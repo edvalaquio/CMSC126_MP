@@ -9,6 +9,10 @@ body{
 /*	box-shadow: 5px 5px 15px;*/
 }
 
+.post-panel{
+	padding: 0;
+}
+
 .home-panel {
 	margin-top: 5%;
 	padding: 3%;
@@ -45,6 +49,11 @@ footer .navbar{
 	background: url("../resources/star_wars.png") no-repeat center;
 	height: 250px;
 	padding: 0;
+}
+
+.no-padding{
+	padding: 5px;
+	padding-bottom: 0px;
 }
 
 
@@ -108,4 +117,7 @@ footer .navbar{
 .dp{
 	width: 5rem;
 	height: 5rem;
+	/*padding: 0%;*/
+	padding-right: 0%;
+	margin-right: 0px;
 }
