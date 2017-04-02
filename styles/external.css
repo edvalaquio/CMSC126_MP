@@ -64,6 +64,11 @@ footer .navbar{
 	left: 26.5%;
 }
 
+.profPic img{
+	width: 100%;
+	height: 100%;
+}
+
 .userName{
 	padding-top: 50px;
 }
