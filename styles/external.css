@@ -3,19 +3,23 @@ body{
 	background-color: rgb(242, 242, 242);
 }
 
-.panel {
-	margin-top: 5%;
-	padding: 3%;
-}
-
-.post-panel{
-	padding: 0;
+#comment{
+	overflow: auto;
 }
 
 .home-panel {
 	margin-top: 5%;
-	padding: 3%;
+	padding: 5px;
 	box-shadow: 5px 5px 15px;
+}
+
+.home-panel h4{
+	margin: 0;
+	padding: 15px 7px 5px 7px;
+}
+
+.home-panel .panel-body{
+	padding: 20px 7px 0px 7px;
 }
 
 footer .navbar{
@@ -28,9 +32,33 @@ footer .navbar{
 	background-color: black;
 }
 
-.panel .panel-heading{
+.panel .panel-heading, .panel .panel-body{
 	background-color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.create_posts>.panel .panel-heading{
+	/*background-color: white;*/
+	background-color: rgb(245, 245, 245);
+	margin: 2px 2px;
+}
+
+.create_posts>.panel .panel-footer{
+	margin: 2px 2px;
+}
+
+.posts>.panel .panel-body{
+	padding: 0;
+}
+
+.post-panel{
+	padding: 4px; 
 	margin: 0;
+}
+
+.post-text{
+	padding: 20px 0;
 }
 
 .top{
@@ -43,7 +71,7 @@ footer .navbar{
 	height: 250px;
 	position: relative;
 	background-size: cover;
-	background: url("../resources/star_wars.png") no-repeat center;
+	background: url("../resources/cover_photo.jpg") no-repeat center;
 }
 
 .coverPhoto a{
@@ -70,6 +98,7 @@ footer .navbar{
 	position: absolute;
 	top: 160px;
 	left: 26.5%;
+	/*background: url("../resources/profil.png") no-repeat center;*/
 }
 
 .profPic img{
@@ -99,24 +128,26 @@ footer .navbar{
 
 
 .photo img{
-	height: auto;
-	width: 100px;
+	height: 100%;
+	width: 100%;
 }
 
-.photo-box{
-	height: 135px;
-	width: 135px;
+.grid_photos div{
+	padding: 0;
 }
 
-.photo{
+.full-photo{
 	width: 100%;
 	height: 100%;
-	padding: 0%;
 }
 
 .btn-no-border{
 	border:0px solid; 
 	background-color:transparent; "
+}
+
+.no-top-bottom-padding{
+	padding: 0,0;
 }
 
 .dp{
@@ -127,7 +158,22 @@ footer .navbar{
 	margin-right: 0px;
 }
 
+.content{
+	position: relative;
+	margin-top: 10px;
+}
 
+.bold{
+	font-weight: bold;
+}
+
+.black{
+	color: black;
+}
+
+.no-margin{
+	margin:0; 
+}
 @media screen and (min-width: 321px){
 	.profPic{
 		left: 30%;
@@ -147,8 +193,11 @@ footer .navbar{
 }
 
 @media screen and (min-width: 769px){
+	.content{
+		/*margin-top: 0;*/
+	}
 	.top{
-		margin-bottom: 50px;
+		margin-bottom: 70px;
 	}
 
 	.profPic{
