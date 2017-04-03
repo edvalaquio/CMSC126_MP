@@ -71,7 +71,8 @@ footer .navbar{
 	height: 250px;
 	position: relative;
 	background-size: cover;
-	background: url("../resources/cover_photo.jpg") no-repeat center;
+	background-position: center center;
+	background: url("../resources/cover_photo.jpg") no-repeat;
 }
 
 .coverPhoto a{
@@ -97,13 +98,17 @@ footer .navbar{
 	height: 150px;
 	position: absolute;
 	top: 160px;
-	left: 26.5%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
 	/*background: url("../resources/profil.png") no-repeat center;*/
 }
 
 .profPic img{
 	width: 100%;
 	height: 100%;
+	/*position: absolute;*/
 }
 
 .userName{
@@ -133,7 +138,23 @@ footer .navbar{
 }
 
 .grid_photos div{
+	position: relative;
+	background: url("../resources/cover_photo.jpg") no-repeat;
+	background-size: cover;
 	padding: 0;
+}
+
+.grid_photos div:after{
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.grid_photos a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*height: 90px;*/
 }
 
 .full-photo{
@@ -174,7 +195,7 @@ footer .navbar{
 .no-margin{
 	margin:0; 
 }
-@media screen and (min-width: 321px){
+/*@media screen and (min-width: 321px){
 	.profPic{
 		left: 30%;
 	}
@@ -191,7 +212,7 @@ footer .navbar{
 		left: 40%;
 	}
 }
-
+*/
 @media screen and (min-width: 769px){
 	.content{
 		/*margin-top: 0;*/
@@ -201,6 +222,7 @@ footer .navbar{
 	}
 
 	.profPic{
+		margin: 0;
 		left: 20px;
 	}
 
