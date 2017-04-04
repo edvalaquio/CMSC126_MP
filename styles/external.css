@@ -194,11 +194,11 @@ footer .navbar{
 
 .btn-no-border{
 	border:0px solid; 
-	background-color:transparent; "
+	background-color:transparent; 
 }
 
 .no-top-bottom-padding{
-	padding: 0,0;
+	padding: 0px 0px;
 }
 
 .dp{
