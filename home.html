@@ -24,23 +24,29 @@
 			<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-fire"></span> TwitBook</a>
 		</div>
 		<div class="collapse navbar-collapse" id="sample">
-			<ul class="nav navbar-nav pull-left ">	
-				<li><a href="#" title="Members" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Eric Flores and Emmanuel Valaquio">About</a></li>
-			</ul>
-			<ul class="nav navbar-nav pull-right">
-				<li class="dropdown">
-					<!-- <div > -->
-						<a class="dropdown-toggle" href="#" data-toggle="dropdown">Language: English <span class="caret"></span> </a>
-						<ul class="dropdown-menu">
-							<li><a href="#"> Korean </a></li>
-							<li><a href="#"> Filipino </a></li>
-							<li><a href="#"> Japanese </a></li>
-							<li><a href="#"> Chinese </a></li>
-							<li><a href="#"> Deutch </a></li>
-						</ul>
-					<!-- </div> -->
-				</li>
-			</ul>
+			<div class="col-xs-12 col-sm-2">
+				<ul class="nav navbar-nav ">	
+					<li><a href="#" title="Members" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="Eric Flores and Emmanuel Valaquio">About</a></li>
+				</ul>
+			</div>
+
+			<div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 navbar-right">
+				
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<!-- <div > -->
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown">Language: English <span class="caret"></span> </a>
+							<ul class="dropdown-menu">
+								<li><a href="#"> Korean </a></li>
+								<li><a href="#"> Filipino </a></li>
+								<li><a href="#"> Japanese </a></li>
+								<li><a href="#"> Chinese </a></li>
+								<li><a href="#"> Deutch </a></li>
+							</ul>
+						<!-- </div> -->
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 	<div id="carousel_background" class="carousel slide affix" data-ride="carousel">
@@ -110,10 +116,21 @@
 			</div>
 		</div>
 	</div>
-	<!-- <footer>
-		<div class="navbar bg-success"></div>
-		<p class="text-center">SAMPLE SAMPLE SAMPLE SAMPLE</p>
-	</footer> -->
+	<footer>
+		<div class="navbar">
+			<!-- <ul class="nav nav-justified">	
+				<li><a href="#" >About</a></li>
+				<li><a href="#" >Privacy Policy</a></li>
+				<li><a href="#" >Help</a></li>
+			</ul> -->
+			<!-- <div class="nav nav-justified">	 -->
+				<a href="#" >About</a>
+				<a href="#" >Privacy Policy</a>
+				<a href="#" >Help</a>
+			<!-- </ul> -->
+		</div>
+		<!-- <p class="text-center">SAMPLE SAMPLE SAMPLE SAMPLE</p> -->
+	</footer>
 	<script>
 		$(document).ready(function(){
 		    $('[data-toggle="popover"]').popover();   
