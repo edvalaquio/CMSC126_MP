@@ -1,6 +1,6 @@
 body{
 	margin-top: 50px;
-	background-color: rgb(242, 242, 242);
+	background-color: rgba(242, 242, 242, 0.7);
 }
 
 #carousel_background, #carousel_background .carousel-inner,
@@ -155,8 +155,10 @@ footer .navbar{
 	background-color: white;
 }
 
-.subNav a, .coverButton button{
+.subNav button, .coverButton button{
 	padding: 15px;
+	border: none;
+	/*background-color: rgba(242, 242, 242, 0.7);*/
 }
 
 
